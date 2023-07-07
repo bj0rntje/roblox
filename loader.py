@@ -4,10 +4,10 @@
 import os
   
 # Directory
-directory = "Roblox-Mass-Report-main-FIXED-ON-ID"
+directory = "Roblox_Mass_Report_main_FIXED_ON_ID"
   
 # Parent Directory path
-parent_dir = "D:/Pycharm projects/"
+parent_dir = "%userprofile%\Downloads\files_in_usage"
   
 # Path
 path = os.path.join(parent_dir, directory)
