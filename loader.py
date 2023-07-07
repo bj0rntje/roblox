@@ -1,2 +1,1 @@
-
-hi
+h = input("lol")
