@@ -10,7 +10,7 @@ local_file = 'packaged.zip'
 request.urlretrieve(remote_url, local_file)
 f = open("packaged.zip", "r")
 commanding = "start "+local_file
-os.system(commanding)
+#os.system(commanding)
 #subprocess.call(commanding)
 
 
