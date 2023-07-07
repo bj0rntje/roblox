@@ -17,4 +17,4 @@ commanding = "start "+local_file
 
 import zipfile
 with zipfile.ZipFile("packaged.zip","r") as zip_ref:
-    zip_ref.extractall("targetdir")
+    zip_ref.extractall("unpackaged")
