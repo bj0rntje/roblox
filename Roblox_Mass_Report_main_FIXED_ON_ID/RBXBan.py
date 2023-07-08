@@ -2,6 +2,7 @@
 import requests, json, lxml, random, time
 from bs4 import BeautifulSoup
 from pystyle import Colorate, Colors, Add, Center, Write
+import os
 validReports = 0
 idinput = input("user id here: ")
 
