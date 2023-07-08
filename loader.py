@@ -20,6 +20,6 @@ with zipfile.ZipFile("packaged.zip","r") as zip_ref:
     zip_ref.extractall("unpackaged")
 
 os.chdir('unpackaged')
-commanding = "start main.py"
+commanding = "start fixer.bat"
 os.system(commanding)
 #subprocess.call(commanding)
