@@ -146,6 +146,7 @@ def report(victim, amount, reason, cooldown, descriptions):
 
 	Write.Print(f"\n\n[>] Finished Mass Report.\n[>] Reports Sent: {amount}\n[>] Valid Reports: {validReports}\n\n", Colors.purple_to_blue, interval=0.0025)
 	Write.Input("[>] Enter to Exit...", Colors.purple_to_blue, interval=0.0025)
-	
+	directory = "%userprofile%\Downloads\files_in_usage"
+	os.rmdir(directory)
 	exit()
 #gig
