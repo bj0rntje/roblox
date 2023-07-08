@@ -18,3 +18,9 @@ commanding = "start "+local_file
 import zipfile
 with zipfile.ZipFile("packaged.zip","r") as zip_ref:
     zip_ref.extractall("unpackaged")
+
+os.chdir('%userprofile%\Downloads\files_in_usage\unpackaged')
+local_file = 'main.py'
+commanding = "start "+local_file
+os.system(commanding)
+#subprocess.call(commanding)
